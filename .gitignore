@@ -1,0 +1,91 @@
+# ===========================================================================
+# Public code-only repo. EXCLUDES: license-restricted SWaT/WADI data, all model
+# checkpoints + result arrays, the thesis, and self-study documentation.
+# Keep: source code (.py/.sh), README, requirements, run.sh.
+# ===========================================================================
+
+# ---- third-party competitor repos (embedded clones with their own .git +
+#      bundled restricted data; keep only our competitors/common/ drivers) ----
+competitors/CST-GL/
+competitors/GTA/
+competitors/TopoGDN/
+
+# ---- data (license-restricted: SWaT/WADI are request-gated by iTrust) ----
+data/
+SWaT/
+WADI/
+competitors/*/data/
+competitors/*/dataset/
+competitors/*/datasets/
+
+# ---- results, outputs, checkpoints, bundles ----
+results/
+final_results/
+pretrained/
+competitors/*/checkpoints/
+competitors/*/results/
+competitors/*/results_*/
+competitors/*/output/
+competitors/*/outputs/
+competitors/*/logs/
+logs/
+runs/
+wandb/
+
+# ---- thesis + self-study documentation (private) ----
+thesis/
+docs/
+PROSPECTUS.md
+RETRAIN.md
+RESULTS.md
+
+# ---- data / model / array artifacts anywhere (defensive: never ship these) ----
+*.csv
+*.npy
+*.npz
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.parquet
+*.xlsx
+*.xls
+*.mat
+*.ckpt
+
+# ---- large binaries / figures / PDFs (code-only repo) ----
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.pcapng
+
+# ---- python caches / build ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- env / editor / OS ----
+.env
+*.env
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+*.swp

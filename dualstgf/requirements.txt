@@ -1,0 +1,25 @@
+# DyEdgeGAT Requirements
+# Core deep learning
+torch>=2.0.0
+torch-geometric>=2.3.0
+pyreadr>=0.5.0
+
+# Data processing
+pandas>=1.5.0
+numpy>=1.24.0
+xlrd>=2.0.1
+scikit-learn>=1.3.0
+
+# Visualization (optional but recommended)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.18.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# For PyTorch Geometric dependencies
+torch-scatter
+torch-sparse
+torch-cluster
+torch-spline-conv
